@@ -176,9 +176,23 @@
 		<p class="text-center">{ongoingTotal} completed tasks</p>
 	{/if}
 </div>
+<!-- div to buffer the footer element -->
+<div class="h-[56px]"></div>
+
+<footer class="absolute bottom-0 flex w-full justify-center p-2">
+	<p>
+		Made with 💓. Source code is available at <Button
+			variant="link"
+			href="https://github.com/digidevguy/svelte-todo"
+			target="_blank"
+			class="max-w-content p-0">Github</Button
+		>.
+	</p>
+</footer>
 
 <style>
 	:global(body) {
+		position: relative;
 		padding-top: 1rem;
 		min-height: 100vh;
 	}
